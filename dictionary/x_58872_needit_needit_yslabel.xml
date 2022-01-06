@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="task" label="NeedIt_ysLabel" max_length="40" name="x_58872_needit_needit_yslabel" type="collection">
+        <element attributes="encode_utf8=false" label="リクエスト" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="legal" label="リクエストの種類" mandatory="true" max_length="40" name="u_request_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Human Resources" language="ja" sequence="0" value="hr"/>
+                <element inactive_on_update="false" label="Facilities" language="ja" sequence="1" value="facilities"/>
+                <element inactive_on_update="false" label="Legal" language="ja" sequence="2" value="legal"/>
+                <element inactive_on_update="false" label="Your Department Choice" language="ja" sequence="3" value="your_choice"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="legal1" label="必要なもの" mandatory="true" max_length="40" name="u_what_needed" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Human Resources 1" language="ja" sequence="0" value="hr1"/>
+                <element inactive_on_update="false" label="Human Resources 2" language="ja" sequence="1" value="hr2"/>
+                <element inactive_on_update="false" label="Facilities 1" language="ja" sequence="2" value="facilities1"/>
+                <element inactive_on_update="false" label="Facilities 2" language="ja" sequence="3" value="facilities2"/>
+                <element inactive_on_update="false" label="Legal 1" language="ja" sequence="4" value="legal1"/>
+                <element inactive_on_update="false" label="Legal 2" language="ja" sequence="5" value="legal2"/>
+                <element inactive_on_update="false" label="Your Department Choice 1" language="ja" sequence="6" value="your_choice1"/>
+                <element inactive_on_update="false" label="Your Department Choice 2" language="ja" sequence="7" value="your_choice2"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="必要に応じて" mandatory="true" max_length="40" name="u_when_needed" type="glide_date_time"/>
+    </element>
+</database>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Historic NeedIt Data 2" max_length="40" name="x_58872_needit_historic_needit_data_2" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Must Ahave by" label="Must Ahave by" max_length="40" name="u_must_ahave_by" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Requested Afor" label="Requested Afor" max_length="40" name="u_requested_afor" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Request Atype" label="Request Atype" max_length="40" name="u_request_atype" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Short Adescription" label="Short Adescription" max_length="40" name="u_short_adescription" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=What Aneeded" label="What Aneeded" max_length="40" name="u_what_aneeded" type="string"/>
+    </element>
+</database>
